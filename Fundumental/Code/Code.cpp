@@ -129,12 +129,109 @@ int main ()      //main-function = variable type is integer
 using namespace std ;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//I/O : output form : cout << x ;
+int main()
+{
+	int x ; 
+	x = 5
+	cout << x ;
+	return 0; 
+}
+//control character 
+\n	//pass the line 
+\t  //put next 8 block bit   
+\a  //alarm
+\\  //print the / 
+\"  //print the "
+\v  //put next 8 line 
+\b  //delete previose character
+\r  //show "Enter" button 
+\?  //print the ? 
+\:  //print the : 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//delete this info: Process exited after 0.2094 seconds with return value 0
+//   				Press any key to continue . . .
 
+use this structer : get()
+//Ex : 
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout<<"C++ is good lang";
+	cin.get()
+	return 0; 
+}
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//use '::' when we dont use "using namespace std ;"
+//std::cout
+//std::cin
+//Ex :
+std :: cout << x ;
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//change int to float 
+//use static_cast<float>
+ave = static_cast<float> (x + m + y) / 3
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//print character in C++
+//use cin and ch variable or use cin.get()
+char ch ;
+cin>> ch ;
+ch = cin.get() ;
 
+//use string class : #include <string>
+string s1 , s2 ; 
+string s1("hello");
+string s2 ;
+s2 = s1 ;
+//strings in inputs with getline() library 
+getline(cin, str);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//format output data : <iomanip> use setw(d) : d = range of number
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	int x ;
+	x = 3568 ;
+	cout<<"x ="<<setw(6)<<x ; 
+	cin.get();
+}
+
+//format output data : <iomanip> use setprecision(n) : d = range of number
+
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+
+int main() {
+    double number1 = 123.456789;
+    double number2 = 987.654321;
+
+    cout << "Without setprecision:" << endl;
+    cout << "Number 1: " << number1 << endl;
+    cout << "Number 2: " << number2 << endl;
+
+    cout << "\nWith setprecision(3):" << endl;
+    cout << fixed << setprecision(3); 
+    cout << "Number 1: " << number1 << endl;
+    cout << "Number 2: " << number2 << endl;
+
+    cout << "\nWith setprecision(5):" << endl;
+    cout << fixed << setprecision(5);
+    cout << "Number 1: " << number1 << endl;
+    cout << "Number 2: " << number2 << endl;
+
+    return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
